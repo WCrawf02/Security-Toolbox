@@ -2,8 +2,7 @@
 
 ### Tools Used 
 1. Nmap
-   - is a powerful network scanning utility that extends the functionality of the popular Nmap tool with additional features and customization options. This tool is designed to simplify the process of network reconnaissance and provide users with more control over their scanning operations.
-
+   - *Purpose*: 
 Features:
 Custom Scanning Options: The tool allows users to specify custom scanning options, including scan types, port ranges, and target specifications, to tailor the scanning process to their specific requirements.
 
