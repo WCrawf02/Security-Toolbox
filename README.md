@@ -17,4 +17,9 @@
 4. VirtualBox🛜
    - **Purpose**: Virtualization software for running machines.
    - **Explanation**: Created virtual machines for both Ubuntu and Kali Linux. Used to create and run virtual enviironments for both my victim and attacker          machines.  I was ableto set up isolated environments to conduct safe penetration testing and vulnerability analysis.
-
+5. Kali Linux📲
+   - **Purpose**: Penetration testing and security auditing platform.
+   - **Explanation**: Performed attacks like network scanning, traffic analysis, and remote shell setup from the Kali Linux Machine.
+6. Ubuntu
+   - **Purpose**: Operating system for the victim machine.
+   - **Explanation**: Used as the target (victim) machine for testing vulnerabilities and monitoring network traffic. 
