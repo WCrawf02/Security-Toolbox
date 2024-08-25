@@ -23,3 +23,15 @@
 6. Ubuntu
    - **Purpose**: Operating system for the victim machine.
    - **Explanation**: Used as the target (victim) machine for testing vulnerabilities and monitoring network traffic. 
+
+### Troubleshooting Issues
+During the initial phase of my penetration testing/threat hunting project, I encountered a critical obstacle when attempting to establish a remote shell connection via SSH.  The port (22) neccessary for SSH was closed on the victim machine, preventing me from proceeding with connection. To resolve this, I took the following steps:
+   1. **Diagnosed the Issue**:
+      - Used nmap on my attacker machine to scan the victim machine for open ports. Results were port 22 was closed.
+   2. **Opening SSH Port**:
+      - On the victim machine (Ubuntu), I installed the '**openssh-server**' package to enable SSH services.
+      - Next, I configured the firewall to allow incoming connections on port 22: '**sudo ufw allow 22/tcp | sudo ufw reload**'
+      - Verified SSH service was running with this command: '**sudo systemctl status ssh**'
+   3. Verify connection
+      - Once firewall was configured, I ran another '**nmap**' scan to ensure port 22 was now open and accepting connections.
+      - Once confirmed, I successfully initiated an SSH connection from Kali machine to Ubuntu machine: '**ssh username@victim[ip_address]**'
