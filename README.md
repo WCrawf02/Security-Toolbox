@@ -32,6 +32,6 @@ During the initial phase of my penetration testing/threat hunting project, I enc
       - On the victim machine (Ubuntu), I installed the '**openssh-server**' package to enable SSH services.
       - Next, I configured the firewall to allow incoming connections on port 22: '**sudo ufw allow 22/tcp | sudo ufw reload**'
       - Verified SSH service was running with this command: '**sudo systemctl status ssh**'
-   3. Verify connection
+   3. **Verify connection**
       - Once firewall was configured, I ran another '**nmap**' scan to ensure port 22 was now open and accepting connections.
       - Once confirmed, I successfully initiated an SSH connection from Kali machine to Ubuntu machine: '**ssh username@victim[ip_address]**'
